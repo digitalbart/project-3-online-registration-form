@@ -5,7 +5,7 @@
 - used mobile first approach of site building
 
 # Desktop
-![Desktop]()
+![Desktop](https://raw.githubusercontent.com/digitalbart/project-3-online-registration-form/master/mockups/desktop-form.png)
 
 # Mobile
-![mobile]()
+![mobile](https://raw.githubusercontent.com/digitalbart/project-3-online-registration-form/master/mockups/mobile-form.png)
