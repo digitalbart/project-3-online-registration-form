@@ -36,10 +36,20 @@ h3 {
   color: #2D3945;  
 }
 
-h1 {
+h1,
+fieldset legend {
   font-size: 22px;
+  color: #2D3945;
+  font-weight: 700;
 }
 
+form label {
+  font-size: 14px;
+}
+
+button {
+  font-family: 'Merriweather', serif; 
+}
 
 /* header styles */
 
@@ -85,19 +95,44 @@ form label {
   display: block;
 }
 
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: 16px;
+}
+
 form input,
 form select {
-  width: 100%;
+  background-color: #eff0f1;
+  border-radius: 5px;
+  border: none;
   margin: 8px 0 16px;  
-  padding: 8px 0;
+  padding: 16px;
+  position: relative;
+  width: 100%;
 }
+
+form input:focus,
+form select:focus {
+  border: 2px solid #46698b;
+}
+
+form input.required::after {
+  content: 'required';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 
 button[type="submit"] {
   background-color: #4ebbb5;
   border-radius: 10px;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   margin: 16px 0;
   padding: 16px;
   width: 100%;
