@@ -117,14 +117,6 @@ form label {
   margin-right: 1em;
 }
 
-fieldset {
-  border: 0;
-}
-
-fieldset legend {
-  margin-bottom: 16px;
-}
-
 form input,
 form select {
   background-color: #eff0f1;
@@ -141,11 +133,10 @@ form select:focus {
   border: 2px solid #46698b;
 }
 
-form input.required::after {
-  content: 'required';
-  position: absolute;
-  right: 0;
-  top: 0;
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+  font-size: 1.2em;
 }
 
 .newsletter-details {
@@ -182,6 +173,14 @@ button[type="submit"] {
   margin: 16px 0;
   padding: 16px;
   width: 100%;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: 16px;
 }
 
 /* footer styles */
