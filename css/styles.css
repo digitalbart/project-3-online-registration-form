@@ -4,7 +4,6 @@
 }
   
 body {
-  background: #f7f5f0;
   color: #222;
   font-family: 'Merriweather', serif;
   font-weight: 200;
@@ -47,6 +46,11 @@ form label {
   font-size: 14px;
 }
 
+footer p {
+  font-style: italic;
+  margin-top: 0;
+}
+
 button {
   font-family: 'Merriweather', serif; 
 }
@@ -60,6 +64,13 @@ header {
   text-transform: uppercase;
   padding: 1em 0;
   border-bottom: 3px solid #2d3945;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 auto;
 }
 
 
@@ -95,10 +106,15 @@ form label {
   display: block;
 }
 
-.checkbox,
-.radio {
+.radio input,
+.checkbox input {
   display: inline;
   width: auto;
+}
+
+.radio input,
+.checkbox input {
+  margin-right: 1em;
 }
 
 fieldset {
@@ -132,6 +148,30 @@ form input.required::after {
   top: 0;
 }
 
+.newsletter-details {
+  border-top: 2px solid black;
+  margin-top: -50px;
+}
+  .newsletter-details legend {
+    margin-top: 3.5em;
+    margin-bottom: 0;
+  }
+
+.textarea {
+  margin-top: 1em;
+}
+
+  .textarea label {
+    margin-bottom: 1em
+  }
+
+  .textarea textarea {
+      background-color: #eff0f1;
+      border: 0;
+      padding: 1em;
+      width: 100%;
+      min-height: 100px;
+    }
 
 button[type="submit"] {
   background-color: #4ebbb5;

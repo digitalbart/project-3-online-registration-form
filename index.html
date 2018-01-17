@@ -9,7 +9,7 @@
 </head>
   <body>
     <header>
-      <div class="center">The code review</div>            
+      <h2 class="center">The code review</h2>            
     </header>
     <main>      
       <h1 class="center">Signup for our newsletter</h1>
@@ -33,7 +33,7 @@
           <input type="text" id="city" name="city">
           <label for="state">State</label>
           <select id="state" name="state">
-            <option value="">Choose your state</option>
+            <option value="">Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -89,44 +89,43 @@
           <label for="zip_code">Zip Code</label>    
           <input type="text" id="zip_code" name="zip_code" title="Five digit zip code" />
         </fieldset>
-        <fieldset>                  
+        <fieldset class="newsletter-details">                  
           <legend>
             Newsletter
-          </legend>
-          
+          </legend>          
           <p>Select the newsletters you would liek to receive.</p>
 
-          <div>
+          <div class="checkbox">
             <label for="html_news">
-              <input type="checkbox" id="html_news" class="checkbox" name="news">
+              <input type="checkbox" id="html_news" name="news">
               HTML News
             </label>
           </div>
-          <div>
+          <div class="checkbox">
             <label for="css_news">
-              <input type="checkbox" id="css_news" class="checkbox" name="news">  
+              <input type="checkbox" id="css_news" name="news">  
               CSS News
             </label> 
           </div>
-          <div>    
+          <div class="checkbox">    
             <label for="js_news">
-              <input type="checkbox" id="js_news" class="checkbox" name="news"> 
+              <input type="checkbox" id="js_news"  name="news"> 
               Javascript News
             </label> 
           </div>
 
           <p>Newsletter Format</p>
-          <div>           
+          <div class="radio">           
             <label for="html_format">
-            <input type="radio" id="html_format" class="radio" name="newsletter_format">       
+            <input type="radio" id="html_format"  name="newsletter_format">       
             HTML</label>
           </div>
-          <div>    
+          <div class="radio" >    
             <label for="plain_format">
-            <input type="radio" id="plain_format" class="radio" name="newsletter_format">   
+            <input type="radio" id="plain_format" name="newsletter_format">   
             Plain text</label> 
           </div>
-          <div>   
+          <div class="textarea">   
             <label for="other_topics">Other topics you would like to hear about</label>
             <textarea id="other_topics" name="other_topics"></textarea>
           </div>
