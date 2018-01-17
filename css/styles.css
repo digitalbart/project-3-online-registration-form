@@ -95,6 +95,12 @@ form label {
   display: block;
 }
 
+.checkbox,
+.radio {
+  display: inline;
+  width: auto;
+}
+
 fieldset {
   border: 0;
 }

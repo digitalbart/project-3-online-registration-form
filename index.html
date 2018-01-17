@@ -95,20 +95,41 @@
           </legend>
           
           <p>Select the newsletters you would liek to receive.</p>
-          <label for="html_news">HTML News</label>
-          <input type="checkbox" id="html_news" name="html_news">
-          <label for="html_news">CSS News</label>
-          <input type="checkbox" id="css_news" name="css_news">       
-          <label for="html_news">Javascript News</label> 
-          <input type="checkbox" id="js_news" name="js_news"> 
-          <p>Newsletter Format</p>         
-          <label for="html_news">HTML</label>
-          <input type="radio" id="html_format" name="newsletter_format">       
-          <label for="html_news">Plain text</label> 
-          <input type="radio" id="plain_format" name="newsletter_format">   
 
-          <label for="other_topics">Other topics you would like to hear about</label>
-          <textarea id="other_topics" name="other_topics"></textarea>
+          <div>
+            <label for="html_news">
+              <input type="checkbox" id="html_news" class="checkbox" name="news">
+              HTML News
+            </label>
+          </div>
+          <div>
+            <label for="css_news">
+              <input type="checkbox" id="css_news" class="checkbox" name="news">  
+              CSS News
+            </label> 
+          </div>
+          <div>    
+            <label for="js_news">
+              <input type="checkbox" id="js_news" class="checkbox" name="news"> 
+              Javascript News
+            </label> 
+          </div>
+
+          <p>Newsletter Format</p>
+          <div>           
+            <label for="html_format">
+            <input type="radio" id="html_format" class="radio" name="newsletter_format">       
+            HTML</label>
+          </div>
+          <div>    
+            <label for="plain_format">
+            <input type="radio" id="plain_format" class="radio" name="newsletter_format">   
+            Plain text</label> 
+          </div>
+          <div>   
+            <label for="other_topics">Other topics you would like to hear about</label>
+            <textarea id="other_topics" name="other_topics"></textarea>
+          </div>
 
         </fieldset>
 
