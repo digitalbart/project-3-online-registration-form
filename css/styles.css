@@ -85,6 +85,10 @@ main {
 
 /* form styles */
 
+input, textarea, select { 
+  outline: none;
+}
+
 form {
   border-top: 5px solid #2d3945;  
   position: relative;
@@ -129,8 +133,14 @@ form select {
 }
 
 form input:focus,
-form select:focus {
+form select:focus,
+form textarea:focus {
   border: 2px solid #46698b;
+  box-shadow: none;
+}
+
+select, input, button {
+    border-width: 0px;
 }
 
 input::placeholder {
@@ -139,14 +149,19 @@ input::placeholder {
   font-size: 1.2em;
 }
 
+/*
 .newsletter-details {
   border-top: 2px solid black;
   margin-top: -50px;
-}
+} */
+
   .newsletter-details legend {
-    margin-top: 3.5em;
+    border-top: 2px solid black;
+    display: block;
     margin-bottom: 0;
-  }
+    padding-top: 1em;
+    width: 100%;
+  } 
 
 .textarea {
   margin-top: 1em;
@@ -159,6 +174,7 @@ input::placeholder {
   .textarea textarea {
       background-color: #eff0f1;
       border: 0;
+      border-radius: 5px;
       padding: 1em;
       width: 100%;
       min-height: 100px;
@@ -204,17 +220,46 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-  .col,
-  .col-half {
-    width: 50%;
-    padding: 0 2%;
-    float: left;
+  div {
+    overflow: auto;
   }
 
-  .col:nth-of-type(2)
-  .col-half:nth-of-type(2) {
-    clear: both;
-    display: table;  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+
+  .display-flex {
+      display: flex;
+      align-items: center;
+  }  
+
+  .radio input,
+  .checkbox input {
+    margin-top: 2px;
+  }
+
+  .checkbox,
+  .radio {
+    margin-bottom: 0.75em;
+  }
+
+  form input,
+  form select {
+    display: inline-block;
+    float: left;
+    margin: 1em 0;
+    width: 75%;
+  }
+
+  .newsletter-details label {
+    width: 100%;
   }
 
   footer p {
@@ -226,34 +271,7 @@ footer {
     float: left;
   }
 
-  .footer__nav .footer__top {
-    display: none;
-  }
-
-  .footer__nav ul {
-    display: inline-block;
-    list-style: none;  
-    float: right;
-  }
-
-  .footer__nav li {
-    display: inline-block;
-    float: left;
-    margin: 0 16px;
-  }
 
 } 
 
-/* Styles for the desktop screens & beyond */
-
-
-@media screen and (min-width: 1024px) {
-
-  .col {
-    width: 33%;
-    padding: 0 2%;
-    float: left;
-  }
-
-}
 
